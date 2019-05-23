@@ -64,33 +64,28 @@ namespace _111zal2
                 if (int.TryParse(textBox1.Text, out int x))
                 {
                     id = int.Parse(textBox1.Text);
+                    if (db.karlitos_products.Where(a => a.ProductId == id).Count() == 1)
+                    {
+                        //Console.WriteLine(db.karlitos_products.Where(a => a.ProductId == id).Count());
+                        edit = db.karlitos_products.Where(a => a.ProductId == id).First();
+                        textBox5.Text = edit.ProductName;
+                        textBox2.Text = edit.SerialNumber;
+                        textBox3.Text = edit.Color;
+                        textBox4.Text = edit.Price.ToString();
+                        comboBox1.Text = "";
+                        comboBox1.SelectedText = edit.Type;
+                        numericUpDown1.Value = decimal.Parse(edit.QTY.ToString());
+                    }
+                    else
+                    {
+                        id = int.Parse(textBox1.Text);
+                        MessageBox.Show("Product with id = " + id + " was not found");
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Id must be a number");
-                    id = 1;
-                    textBox1.Text = id.ToString();
                 }
-                if (db.karlitos_products.Where(a => a.ProductId == id).Count() == 1)
-                {
-                    //Console.WriteLine(db.karlitos_products.Where(a => a.ProductId == id).Count());
-                    edit = db.karlitos_products.Where(a => a.ProductId == id).First();
-                }
-                else
-                {
-                    id = int.Parse(textBox1.Text);
-                    MessageBox.Show("Product with id = " + id + " was not found");
-                    id = 1;
-                    textBox1.Text = id.ToString();
-                    edit = db.karlitos_products.Where(a => a.ProductId == id).First();
-                }
-                textBox5.Text = edit.ProductName;
-                textBox2.Text = edit.SerialNumber;
-                textBox3.Text = edit.Color;
-                textBox4.Text = edit.Price.ToString();
-                comboBox1.Text = "";
-                comboBox1.SelectedText = edit.Type;
-                numericUpDown1.Value = decimal.Parse(edit.QTY.ToString());
             }
         }
 
