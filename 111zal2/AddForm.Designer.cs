@@ -98,7 +98,7 @@
             this.textBox1.Location = new System.Drawing.Point(92, 34);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(129, 20);
-            this.textBox1.TabIndex = 5;
+            this.textBox1.TabIndex = 1;
             // 
             // numericUpDown1
             // 
@@ -126,14 +126,14 @@
             this.comboBox1.Location = new System.Drawing.Point(92, 215);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(129, 21);
-            this.comboBox1.TabIndex = 8;
+            this.comboBox1.TabIndex = 5;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(178, 299);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Ok";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -143,28 +143,28 @@
             this.textBox2.Location = new System.Drawing.Point(92, 79);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(129, 20);
-            this.textBox2.TabIndex = 10;
+            this.textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(92, 126);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(129, 20);
-            this.textBox3.TabIndex = 11;
+            this.textBox3.TabIndex = 3;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(92, 170);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(129, 20);
-            this.textBox4.TabIndex = 12;
+            this.textBox4.TabIndex = 4;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(12, 299);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);

@@ -52,7 +52,7 @@
             this.button1.Location = new System.Drawing.Point(337, 251);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Ok";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -62,7 +62,7 @@
             this.button2.Location = new System.Drawing.Point(256, 251);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 8;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
@@ -72,7 +72,7 @@
             this.textBox1.Location = new System.Drawing.Point(85, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(46, 20);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // label1
@@ -96,7 +96,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(350, 108);
+            this.label3.Location = new System.Drawing.Point(350, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 13);
             this.label3.TabIndex = 5;
@@ -148,7 +148,7 @@
             this.comboBox1.Location = new System.Drawing.Point(150, 194);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(153, 21);
-            this.comboBox1.TabIndex = 10;
+            this.comboBox1.TabIndex = 6;
             // 
             // numericUpDown1
             // 
@@ -160,35 +160,35 @@
             0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(153, 20);
-            this.numericUpDown1.TabIndex = 11;
+            this.numericUpDown1.TabIndex = 7;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(427, 105);
+            this.textBox2.Location = new System.Drawing.Point(427, 101);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(153, 20);
-            this.textBox2.TabIndex = 12;
+            this.textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(150, 152);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(153, 20);
-            this.textBox3.TabIndex = 13;
+            this.textBox3.TabIndex = 4;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(427, 152);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(153, 20);
-            this.textBox4.TabIndex = 14;
+            this.textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(150, 101);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(153, 20);
-            this.textBox5.TabIndex = 15;
+            this.textBox5.TabIndex = 2;
             // 
             // EditForm
             // 

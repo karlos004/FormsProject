@@ -34,11 +34,11 @@
             this.smartphonesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tVsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laptopsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,18 +67,18 @@
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SerialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SerialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -119,30 +119,37 @@
             // homeToolStripMenuItem1
             // 
             this.homeToolStripMenuItem1.Name = "homeToolStripMenuItem1";
-            this.homeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.homeToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
             this.homeToolStripMenuItem1.Text = "Home";
             this.homeToolStripMenuItem1.Click += new System.EventHandler(this.HomeToolStripMenuItem1_Click);
             // 
             // smartphonesToolStripMenuItem
             // 
             this.smartphonesToolStripMenuItem.Name = "smartphonesToolStripMenuItem";
-            this.smartphonesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.smartphonesToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.smartphonesToolStripMenuItem.Text = "Smartphones";
             this.smartphonesToolStripMenuItem.Click += new System.EventHandler(this.SmartphonesToolStripMenuItem_Click);
             // 
             // tVsToolStripMenuItem
             // 
             this.tVsToolStripMenuItem.Name = "tVsToolStripMenuItem";
-            this.tVsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tVsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.tVsToolStripMenuItem.Text = "TVs";
             this.tVsToolStripMenuItem.Click += new System.EventHandler(this.TVsToolStripMenuItem_Click);
             // 
             // laptopsToolStripMenuItem
             // 
             this.laptopsToolStripMenuItem.Name = "laptopsToolStripMenuItem";
-            this.laptopsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.laptopsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.laptopsToolStripMenuItem.Text = "Laptops";
             this.laptopsToolStripMenuItem.Click += new System.EventHandler(this.LaptopsToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem1
+            // 
+            this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem1.Text = "Edit";
+            this.editToolStripMenuItem1.Click += new System.EventHandler(this.EditToolStripMenuItem1_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -150,6 +157,13 @@
             this.editToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.editToolStripMenuItem.Text = "Add";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.EditToolStripMenuItem_Click);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -164,20 +178,6 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem1
-            // 
-            this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem1.Text = "Edit";
-            this.editToolStripMenuItem1.Click += new System.EventHandler(this.EditToolStripMenuItem1_Click);
-            // 
-            // refreshToolStripMenuItem
-            // 
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
             // panel2
             // 
@@ -402,10 +402,49 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(9, 27);
+            this.panel1.Location = new System.Drawing.Point(12, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 418);
             this.panel1.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Smartphone",
+            "Tv",
+            "Laptop"});
+            this.comboBox1.Location = new System.Drawing.Point(620, 36);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.ComboBox1_SelectedValueChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(536, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Search by type";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(103, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Search by name";
             // 
             // dataGridView1
             // 
@@ -423,39 +462,12 @@
             this.dataGridView1.Size = new System.Drawing.Size(773, 316);
             this.dataGridView1.TabIndex = 0;
             // 
-            // QTY
+            // id
             // 
-            this.QTY.DataPropertyName = "QTY";
-            this.QTY.HeaderText = "QTY";
-            this.QTY.Name = "QTY";
-            this.QTY.Width = 60;
-            // 
-            // Type
-            // 
-            this.Type.DataPropertyName = "Type";
-            this.Type.HeaderText = "Type";
-            this.Type.Name = "Type";
-            this.Type.Width = 110;
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "Price";
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            this.Price.Width = 80;
-            // 
-            // Color
-            // 
-            this.Color.DataPropertyName = "Color";
-            this.Color.HeaderText = "Color";
-            this.Color.Name = "Color";
-            // 
-            // SerialNumber
-            // 
-            this.SerialNumber.DataPropertyName = "SerialNumber";
-            this.SerialNumber.HeaderText = "SerialNumber";
-            this.SerialNumber.Name = "SerialNumber";
-            this.SerialNumber.Width = 140;
+            this.id.DataPropertyName = "ProductId";
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
+            this.id.Width = 40;
             // 
             // Name1
             // 
@@ -464,51 +476,39 @@
             this.Name1.Name = "Name1";
             this.Name1.Width = 200;
             // 
-            // id
+            // SerialNumber
             // 
-            this.id.DataPropertyName = "ProductId";
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.Width = 40;
+            this.SerialNumber.DataPropertyName = "SerialNumber";
+            this.SerialNumber.HeaderText = "SerialNumber";
+            this.SerialNumber.Name = "SerialNumber";
+            this.SerialNumber.Width = 140;
             // 
-            // label1
+            // Color
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Search by name";
+            this.Color.DataPropertyName = "Color";
+            this.Color.HeaderText = "Color";
+            this.Color.Name = "Color";
             // 
-            // textBox1
+            // Price
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Price.DataPropertyName = "Price";
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            this.Price.Width = 80;
             // 
-            // label2
+            // Type
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(536, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Search by type";
+            this.Type.DataPropertyName = "Type";
+            this.Type.HeaderText = "Type";
+            this.Type.Name = "Type";
+            this.Type.Width = 110;
             // 
-            // comboBox1
+            // QTY
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Smartphone",
-            "Tv",
-            "Laptop"});
-            this.comboBox1.Location = new System.Drawing.Point(620, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.ComboBox1_SelectedValueChanged);
+            this.QTY.DataPropertyName = "QTY";
+            this.QTY.HeaderText = "QTY";
+            this.QTY.Name = "QTY";
+            this.QTY.Width = 60;
             // 
             // Main
             // 
