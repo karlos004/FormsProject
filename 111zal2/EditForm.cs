@@ -21,24 +21,32 @@ namespace _111zal2
         {
             using (DBEntities2 db = new DBEntities2())
             {
-                karlitos_products edit = new karlitos_products();
-                int id = int.Parse(textBox1.Text);
-                edit = db.karlitos_products.Where(a => a.ProductId == id).First();
-                if (double.TryParse(textBox4.Text, out double x) == false)
+                if (textBox1.Text != "")
                 {
-                    MessageBox.Show("Invalid price format");
+                    karlitos_products edit = new karlitos_products();
+                    int id = int.Parse(textBox1.Text);
+                    edit = db.karlitos_products.Where(a => a.ProductId == id).First();
+                    if (double.TryParse(textBox4.Text, out double x) == false)
+                    {
+                        MessageBox.Show("Invalid price format");
+                    }
+                    else
+                    {
+                        edit.ProductName = textBox5.Text;
+                        edit.SerialNumber = textBox2.Text;
+                        edit.Color = textBox3.Text;
+                        edit.Price = double.Parse(textBox4.Text);
+                        edit.Type = comboBox1.Text;
+                        edit.QTY = long.Parse(numericUpDown1.Value.ToString());
+                        db.SaveChanges();
+                        this.Close();
+                    }
                 }
                 else
                 {
-                    edit.ProductName = textBox5.Text;
-                    edit.SerialNumber = textBox2.Text;
-                    edit.Color = textBox3.Text;
-                    edit.Price = double.Parse(textBox4.Text);
-                    edit.Type = comboBox1.Text;
-                    edit.QTY = long.Parse(numericUpDown1.Value.ToString());
-                    db.SaveChanges();
-                    this.Close();
+                    MessageBox.Show("First select id to edit");
                 }
+                
             }
         }
 
@@ -65,7 +73,7 @@ namespace _111zal2
                 }
                 if (db.karlitos_products.Where(a => a.ProductId == id).Count() == 1)
                 {
-                    Console.WriteLine(db.karlitos_products.Where(a => a.ProductId == id).Count());
+                    //Console.WriteLine(db.karlitos_products.Where(a => a.ProductId == id).Count());
                     edit = db.karlitos_products.Where(a => a.ProductId == id).First();
                 }
                 else
@@ -83,6 +91,26 @@ namespace _111zal2
                 comboBox1.Text = "";
                 comboBox1.SelectedText = edit.Type;
                 numericUpDown1.Value = decimal.Parse(edit.QTY.ToString());
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            using (DBEntities2 db = new DBEntities2())
+            {
+                if (textBox1.Text != "")
+                {
+                    karlitos_products del = new karlitos_products();
+                    int id = int.Parse(textBox1.Text);
+                    del = db.karlitos_products.Where(a => a.ProductId == id).First();
+                    db.karlitos_products.Remove(del);
+                    db.SaveChanges();
+                    MessageBox.Show("Product deleted");
+                    this.Close();
+                } else
+                {
+                    MessageBox.Show("First select id to delete");
+                }
             }
         }
     }
